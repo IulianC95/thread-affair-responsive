@@ -1,0 +1,21 @@
+// relative path to node_modules via sass
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+// import via node_modules ~ alias
+
+@import './../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+@import './styles/fonts';
+
+@import './styles/variables';
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: $brand-primary;
+}
