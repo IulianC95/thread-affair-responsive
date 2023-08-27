@@ -10,7 +10,7 @@ export default function Header() {
                 Toll Free 1-877-666-1840
               </a>
             </li>
-
+            <li>|</li>
             <li>
               <a href="mailto:wtv@wtv.com" title="Email us">
                 office@traidaffairs.com
@@ -37,9 +37,10 @@ export default function Header() {
 
         <div className="header-controls">
           <ul className="d-flex gap-4 flex-lg-row-reverse">
-            <li>
+            <li className="header-cart">
               <button type="button" title="Cart">
                 <i className="fa-solid fa-cart-shopping"></i>
+                <span class="cart-qty d-none d-lg-block">3</span>
               </button>
             </li>
 

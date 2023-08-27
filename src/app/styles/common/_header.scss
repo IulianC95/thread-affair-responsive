@@ -29,6 +29,30 @@
     ul {
       display: flex;
       gap: 16px;
+      align-items: center;
+    }
+
+    a i[class*='fa-'] {
+      @include media-breakpoint-up('lg') {
+        color: $brand-primary;
+        font-size: 24px;
+        margin-right: 8px;
+        position: relative;
+        bottom: -4px;
+      }
+    }
+  }
+
+  &-cart {
+    @include media-breakpoint-up('lg') {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+    @include media-breakpoint-up('lg') {
+      i:first-child {
+        color: $black;
+      }
     }
   }
 
@@ -44,6 +68,23 @@
 
       i[class*='fa-'] {
         font-size: 24px;
+      }
+    }
+    .cart-qty {
+      @include media-breakpoint-up('lg') {
+        background-color: #ff6b6b;
+        border-radius: 24px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        height: 21px;
+        display: inline-flex;
+        padding: 0 8px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -10px;
+        left: 16px;
       }
     }
   }
@@ -64,26 +105,56 @@
   }
 
   &-primary {
-    .nav-primary {
-      ul {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
+    @include media-breakpoint-up('lg') {
+      text-align: center;
+    }
+
+    .nav {
+      &-primary {
+        ul {
+          display: flex;
+          gap: 16px;
+          justify-content: center;
+        }
+
+        a {
+          display: block;
+          padding: 8px 16px;
+          font-weight: 300;
+          line-height: 24px;
+          font-size: 20px;
+          text-transform: uppercase;
+          border-radius: 24px;
+          transition: color 0.2s linear, background-color 0.4s ease-in-out;
+
+          &:hover {
+            background: $brand-primary;
+            color: $white;
+          }
+        }
       }
-
-      a {
-        display: block;
-        padding: 8px 16px;
-        font-weight: 300;
-        line-height: 24px;
-        font-size: 20px;
-        text-transform: uppercase;
-        border-radius: 24px;
-        transition: color 0.2s linear, background-color 0.4s ease-in-out;
-
-        &:hover {
-          background: $brand-primary;
-          color: $white;
+      &-secondary {
+        @include media-breakpoint-up('lg') {
+          margin-bottom: 8px;
+        }
+        li {
+          @include media-breakpoint-up('lg') {
+            display: inline-flex;
+          }
+        }
+        a {
+          @include media-breakpoint-up('lg') {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 12px 24px;
+            transition: color 0.2s linear, background-color 0.4s ease-in-out;
+          }
+        }
+        a:hover {
+          @include media-breakpoint-up('lg') {
+            color: $brand-primary;
+          }
         }
       }
     }

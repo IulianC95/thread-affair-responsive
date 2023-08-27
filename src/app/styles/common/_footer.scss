@@ -27,6 +27,9 @@
     flex-wrap: wrap;
     grid-area: nav;
     row-gap: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 20px;
 
     ul {
       width: 50%;
@@ -36,6 +39,7 @@
       flex-wrap: nowrap;
       row-gap: initial;
       column-gap: 88px;
+      margin-left: initial;
 
       ul {
         width: auto;
@@ -45,15 +49,67 @@
 
   &-contact {
     grid-area: contact;
+    margin-left: 20px;
+
+    @include media-breakpoint-up('lg') {
+      margin-left: 80px;
+    }
+
+    a[href^='mailto:'] {
+      color: $brand-primary;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    h1 span {
+      font-weight: 500;
+      color: $white;
+    }
   }
 
   &-connect {
     grid-area: connect;
     justify-self: center;
+    display: inline-block;
+
+    ul {
+      display: flex;
+      gap: 36px;
+      text-align: center;
+    }
+
+    i[class*='fa-'] {
+      color: $brand-primary;
+      font-size: 36px;
+      display: block;
+      margin-bottom: 8px;
+    }
 
     @include media-breakpoint-up(lg) {
       justify-self: start;
       align-self: center;
+    }
+  }
+  &-secondary {
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 40px;
+    color: $gray-primary;
+
+    span {
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    p img {
+      vertical-align: bottom;
+      margin-left: 6px;
     }
   }
 }

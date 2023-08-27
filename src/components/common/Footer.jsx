@@ -8,32 +8,27 @@ export default function Footer() {
             <ul>
               <li>
                 <a href="" title="information">
-                  information
+                  Information
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Contact Us
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Track my order
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Free returns*
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
-                </a>
-              </li>
-              <li>
-                <a href="" title="information">
-                  information
+                  My account
                 </a>
               </li>
             </ul>
@@ -41,50 +36,32 @@ export default function Footer() {
             <ul>
               <li>
                 <a href="" title="information">
-                  information
+                  Services
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Ship to store
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Gift card
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Online only
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Tips and tricks
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
-                </a>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <a href="" title="information">
-                  information
-                </a>
-              </li>
-              <li>
-                <a href="" title="information">
-                  information
-                </a>
-              </li>
-              <li>
-                <a href="" title="information">
-                  information
+                  Home
                 </a>
               </li>
             </ul>
@@ -92,22 +69,60 @@ export default function Footer() {
             <ul>
               <li>
                 <a href="" title="information">
-                  information
+                  Loyalty programs
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Sign up to the Simons
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  My account
                 </a>
               </li>
               <li>
                 <a href="" title="information">
-                  information
+                  Conditions
+                </a>
+              </li>
+              <li>
+                <a href="" title="information">
+                  Faq
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="" title="information">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="" title="information">
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href="" title="information">
+                  Our story
+                </a>
+              </li>
+              <li>
+                <a href="" title="information">
+                  Art & Culture
+                </a>
+              </li>
+              <li>
+                <a href="" title="information">
+                  Our private labels
+                </a>
+              </li>
+              <li>
+                <a href="" title="information">
+                  Stores
                 </a>
               </li>
             </ul>
@@ -118,36 +133,55 @@ export default function Footer() {
               <span>Thread Affair</span> Milano
             </h1>
             <p>
-              Largo Augusto 3, Milano, 20122, Milano, IT Tel: 0039 02 760 003 66
-              office@thread-affair.com
+              Largo Augusto 3, Milano, 20122, Milano, IT <br />
+              <a href="tel:+054184515415" title="Call us">
+                {' '}
+                Tel: 0039 02 760 003 66
+              </a>{' '}
+              <br />
+              <a href="mailto:office@thread-affair.com" title="Email us">
+                office@thread-affair.com
+              </a>
             </p>
           </section>
 
           <section className="footer-connect">
             <ul>
               <li>
-                <a href="" title="Support">
-                  <i className="fa-solid"></i>
+                <a href="tel:+054184515415" title="Support">
+                  <i className="fa-solid fa-square-phone"></i>
                   Support
                 </a>
               </li>
               <li>
                 <a href="" title="Support">
-                  <i className="fa-solid"></i>
-                  Support
+                  <i className="fa-solid fa-comments"></i>
+                  Chat
                 </a>
               </li>
               <li>
-                <a href="" title="Support">
-                  <i className="fa-solid"></i>
-                  Support
+                <a href="mailto:example@email.com" title="Support">
+                  <i className="fa-solid fa-envelope-open-text"></i>
+                  Email
                 </a>
               </li>
             </ul>
           </section>
         </div>
       </div>
-      <div className="footer-secondary container">HOMEWORK</div>
+      <div className="footer-secondary container">
+        <p>
+          ©2023 <span>Thread affair</span>. All Rights Reserved.
+        </p>
+        <p>
+          Designed by
+          <a href="https://pixellab.ro" title="homepage" target="_blank">
+            <picture>
+              <img src="images/pixellab_logo.jpg" alt="pixellab logo" />
+            </picture>
+          </a>
+        </p>
+      </div>
     </>
   );
 }
