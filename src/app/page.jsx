@@ -1,6 +1,7 @@
 import ProductTile from '@/components/catalog/ProductTile';
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
+import HomeCarousel from '@/components/home/HomeCarousel';
 import HomeCatalogPreview from '@/components/home/HomeCatalogPreview';
 import Newsletter from '@/components/home/newsletter';
 import Payment from '@/components/home/payment';
@@ -13,6 +14,9 @@ export default function Home() {
       </header>
 
       <main className="content">
+        <header>
+          <HomeCarousel></HomeCarousel>
+        </header>
         <div className="layout-css">
           <HomeCatalogPreview></HomeCatalogPreview>
         </div>
