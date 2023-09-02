@@ -1,10 +1,53 @@
 .product-tile {
   text-align: center;
+  position: relative;
 
   &-header {
     img {
       max-width: 100%;
       width: 100%;
+    }
+  }
+  header.product-tile-header span.badge.badge-primary {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-flex;
+      position: absolute;
+      margin-left: -86px;
+      margin-top: 26px;
+    }
+  }
+  &-title {
+    font-size: 26px;
+    margin-top: 20px;
+
+    span:first-child {
+      color: $black;
+      font-weight: 600;
+    }
+  }
+
+  &-title span:last-child {
+    font-weight: 600;
+  }
+
+  &-subtitle {
+    font-size: 20px;
+  }
+
+  &-content {
+    p:first-child {
+      text-decoration: line-through;
+    }
+    p:last-child {
+      font-size: 24px;
+      text-transform: uppercase;
+
+      & span {
+        color: $brand-primary;
+        font-weight: 600;
+      }
     }
   }
 }
