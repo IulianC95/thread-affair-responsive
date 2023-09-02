@@ -3,8 +3,8 @@ import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
 import HomeCarousel from '@/components/home/HomeCarousel';
 import HomeCatalogPreview from '@/components/home/HomeCatalogPreview';
-import Newsletter from '@/components/home/newsletter';
-import Payment from '@/components/home/payment';
+import Newsletter from '@/components/home/Newsletter';
+import Payment from '@/components/home/Payment';
 
 export default function Home() {
   return (
